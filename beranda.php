@@ -5,7 +5,7 @@
                     <div class="text-container">
                         <div class="section-title">Welcome to </div>
                         <h1 class="h1-large">CV.STOWR</h1>
-                        <p class="p-large">Perusahaan ini adalah perusahaan yang bergerak pada software house. Software house merupakan perusahaan yang bergerak dalam bidang software development. Dalam artian, perusahaan yang produk utamanya adalah mengembangkan dan menyediakan software atau aplikasi. </p>
+                        <p class="p-large">CV.STWOR didirikan pada tahun 2018 tepatnya pada tanggal 14 agustus tahun 2018 berkedudukan di kota makassar,  dimana pendirinya terdiri empat orang yaitu Dr.Satria Gunawan Zain,S.Pd.,M.T. , Suhartono,S.Kom.,M.Kom, Abdurahman Patta,S.Kom.,M.T, dan Muhammad Riska Babo,S.Pd.,M.Pd.</p>
                         <a class="btn-solid-lg" href="#services">Offered services</a>
                         <a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Get quote</a>
                     </div> <!-- end of text-container -->
