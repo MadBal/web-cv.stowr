@@ -12,7 +12,7 @@
                             <span class="far fa-file-alt"></span>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Fitur Terbaik Pembuatan Website Perusahaan </h5>
+                            <h5 class="card-title">Teknologi Parkir </h5>
                             <p>Pilih tema website yang diinginkan dan website anda siap digunakan, dengan layanan suport dan panduan lengkap untuk setiap website anda.</p>
                             <ul class="list-unstyled li-space-lg">
                                 
@@ -27,7 +27,7 @@
                             <span class="fas fa-solar-panel"></span>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Carousell</h5>
+                            <h5 class="card-title">Pengelolaan Air Minum</h5>
                             <p>Jika anda ingin membangun website korporasi sekaligus menawarkan paket tertentu, maka fitur ini sangat berguna. </p>
                             
                         </div>
@@ -40,7 +40,7 @@
                             <span class="fas fa-microchip"></span>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Unique Header Style</h5>
+                            <h5 class="card-title">Sistem Informasi</h5>
                             <p>Anda akan mendapatkan header dengan khusus untuk bisnis sepeti jasa, rental mobil, hingga pet shop</p>
                             
                         </div>
