@@ -2,12 +2,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading"><span>Use the following form to</span><br> request a quote for your project</h2>
-                    <p class="p-heading">Vel malesuada sapien condimentum nec. Fusce interdum nec urna et finibus pulvinar tortor id</p>
+                    <h2 class="h2-heading"><span><b>Hubungi Kami</b></span></h2>
                     <ul class="list-unstyled li-space-lg">
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Praesentum, Pharetra Fin, CB 12345, KL</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:085354218189">+62 853-5421-8189</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:rachmat27udinus@gmail.com">rachmat27udinus@gmail.com</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
