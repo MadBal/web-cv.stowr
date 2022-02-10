@@ -49,10 +49,10 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?menu=beranda">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="?menu=header">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?menu=jasa">Jasa</a>
+                        <a class="nav-link" href="?menu=layanan">Jasa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?menu=proyek">Proyek</a>
