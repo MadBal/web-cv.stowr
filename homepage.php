@@ -49,19 +49,19 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="homepage.php?menu=beranda">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="?menu=beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.php?menu=jasa">Jasa</a>
+                        <a class="nav-link" href="?menu=jasa">Jasa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.php?menu=proyek">Proyek</a>
+                        <a class="nav-link" href="?menu=proyek">Proyek</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.php?menu=visi_misi">Visi & Misi</a>
+                        <a class="nav-link" href="?menu=visi_misi">Visi & Misi</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="homepage.php?menu=kontak">Kontak</a>
+                    <a class="nav-link" href="?menu=kontak">Kontak</a>
                     </li>
                 </ul>
             </div> <!-- end of navbar-collapse -->
@@ -71,41 +71,8 @@
 
       
     <!-- Header -->
-        <?php 
-            if (isset ($_GET ['menu'])){
-                $menu = $_GET ['menu'];     
-            
-            switch ($menu) {
-                case 'beranda';
-                    include "beranda.php";
-                    include "layanan.php ";
-                    include "proyek.php ";
-                    include "visi_misi.php ";
-                    include "kontak.php ";
-                    break;
-                case 'jasa' ;
-                    include "layanan.php";
-                    include "proyek.php";
-                    include "visi_misi.php";
-                    include "kontak.php";
-                    break;
-                case 'proyek';
-                    include "proyek.php";
-                    include "visi_misi.php";
-                    include "kontak.php";
-                    break;
-                case 'visi_misi';
-                    include "visi_misi.php";
-                    include "kontak.php";
-                    break;
-                case 'kontak';
-                    include "kontak.php";
-                    break;
-            }
-        }else{
-            include "404 .php"; 
-        }
-        ?>
+    <?php include"content.php"; ?>
+        
 
     <!-- Services -->
    
