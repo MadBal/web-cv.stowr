@@ -179,8 +179,3 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
-<<<<<<< HEAD
-    <!-- end of testimonials -->
-=======
-    <!-- end of testimonials -->
->>>>>>> 71d0b15cc54a3c2a8d0e9d3ecb790ff32d275a50
