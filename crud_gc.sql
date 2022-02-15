@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Nov 2019 pada 08.25
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.1.30
+-- Waktu pembuatan: 15 Feb 2022 pada 15.35
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,15 +24,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(4) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, '000', '$2y$10$gRiKhO.FigmMjDG/SoIDje7oU4oC272kAWQsG8iTz4s/kldb8XLOa'),
+(2, '1111', '$2y$10$7RflWUfF1LLZrdHGkJcoxep5WOgWv/mSxdGsMXcbtDOU0pfs4nqea');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
   `id` int(11) NOT NULL,
   `nama_produk` varchar(255) DEFAULT NULL,
-  `deskripsi` text,
-  `harga_beli` int(11) DEFAULT NULL,
-  `harga_jual` int(11) DEFAULT NULL,
+  `deskripsi` text DEFAULT NULL,
   `gambar_produk` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,15 +58,40 @@ CREATE TABLE `produk` (
 -- Dumping data untuk tabel `produk`
 --
 
-INSERT INTO `produk` (`id`, `nama_produk`, `deskripsi`, `harga_beli`, `harga_jual`, `gambar_produk`) VALUES
-(1, 'Indomie', 'indomie ini enak sekali sob', 4000, 5000, '489-contoh.jpg'),
-(4, '342', '', 55, 234, '452-761-277-contoh.jpg'),
-(5, '123', '33', 55, 123, '623-452-761-277-contoh.jpg'),
-(6, '23', '44', 5, 234, '857-277-contoh.jpg');
+INSERT INTO `produk` (`id`, `nama_produk`, `deskripsi`, `gambar_produk`) VALUES
+(1, 'makan', 'indomie ini enak sekali sob', '489-contoh.jpg'),
+(4, '342', 'hghfjgkhkjh', '453-745x489-img-37290-zee-jkt48.jpg'),
+(5, '123', '33', '623-452-761-277-contoh.jpg'),
+(6, '23', '44', '857-277-contoh.jpg'),
+(8, 'ksjdhfksd', 'aksjhdkahjd', '293-1280px-Logo_of_the_Democratic_Party_(Indonesia).svg.png');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_visimisi`
+--
+
+CREATE TABLE `tbl_visimisi` (
+  `visi` varchar(500) NOT NULL,
+  `misi` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tbl_visimisi`
+--
+
+INSERT INTO `tbl_visimisi` (`visi`, `misi`) VALUES
+('Menjadikan Perusahaan yang Bertaraf Internasional pada Bidang Teknologi Parkir, 														Pengelolaan Air Minum, dan Sistem Informasi di Indonesia Timur', 'Portal Web, Perdagangan Besar Komputer, Perlengkapan Komputer, Piranti Lunak, Perdangan Besar Perlengkapan Elektronik, Telekomunikasi dan Bagian-Bagiannya, Jasa Multimedia');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `produk`
@@ -62,10 +104,16 @@ ALTER TABLE `produk`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
