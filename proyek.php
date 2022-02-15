@@ -1,8 +1,3 @@
-<?php
-require 'koneksi.php';
-$proyek = query("SELECT * FROM tbl_proyek");
-?>
-<?php foreach( $proyek as $row) : ?>
 <div id="projects" class="filter bg-gray">
 		<div class="container">
             <div class="row">
@@ -185,7 +180,3 @@ $proyek = query("SELECT * FROM tbl_proyek");
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
     <!-- end of testimonials -->
-
-    <?php
-        
-    ?>
