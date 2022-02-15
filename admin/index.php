@@ -22,7 +22,7 @@ require '../koneksi.php';
       <h2>Halaman Admin</h2>
       <table>
         <tr>
-          <td><a href="?page=pelayanan">Input visi misi</a></td>
+          <td><a href="?page=visimisi">Input visi misi</a></td>
         </tr>
         <tr>
         <td><a href="logout.php">Logout</a></td>
