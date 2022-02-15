@@ -7,7 +7,7 @@ extract($_POST);
     $q=mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE tbl_visimisi SET 
                                    visi				= '$_POST[visi]',
                                    misi				= '$_POST[misi]',
-                                   WHERE id	= '$_GET[id]'");
+                                   WHERE id     	= '$_GET[id]'");
 
 if($q){	
  

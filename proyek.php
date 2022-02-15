@@ -1,8 +1,13 @@
+<?php
+require 'koneksi.php';
+$proyek = query("SELECT * FROM tbl_proyek");
+?>
+<?php foreach( $proyek as $row) : ?>
 <div id="projects" class="filter bg-gray">
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Projects that we're proud of</h2>
+                    <h2 class="h2-heading">Proyek</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -79,6 +84,8 @@
     </div> <!-- end of filter -->
     <!-- end of projects -->
 
+
+
     <!-- testimonial -->
     <div class="slider-1">
         <div class="container">
@@ -97,10 +104,10 @@
                                         <div class="card-body">
                                             <p class="testimonial-text">Fusce tincidunt dui nec diam varius venenatis. Nullam tristique rutrum odio, ut tincidunt erat dictum in. Etiam et aliquet mi, et vehicula elit fusce porta ullamcorper</p>
                                             <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
+                                                <img class="testimonial-image" src="images/satriagunawan.jpg" alt="alternative">
                                                 <div class="text">
                                                     <div class="testimonial-author">Dr. Satria Gunawan Zain, S.pd., M.T</div>
-                                                    <div class="occupation">Team Leader - Syncnow</div>
+                                                    <div class="occupation">Team Leader</div>
                                                 </div> <!-- end of text -->
                                             </div> <!-- end of testimonial-details -->
                                         </div>
@@ -115,10 +122,10 @@
                                         <div class="card-body">
                                             <p class="testimonial-text">Mauris ut mattis nisl. Nunc ultrices nisi eget nisl pulvinar iaculis vitae ac nulla. Nullam fringilla varius blandit. Nam sit amet eleifend justo blogo rovan de chichis kokos venir dab</p>
                                             <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
+                                                <img class="testimonial-image" src="images/suhartono.jpg" alt="alternative">
                                                 <div class="text">
-                                                    <div class="testimonial-author">Mike Page</div>
-                                                    <div class="occupation">Developer - Chainlink</div>
+                                                    <div class="testimonial-author">Suhartono, S.Kom., M.Kom</div>
+                                                    <div class="occupation">Dosen JTIK</div>
                                                 </div> <!-- end of text -->
                                             </div> <!-- end of testimonial-details -->
                                         </div>
@@ -133,10 +140,10 @@
                                         <div class="card-body">
                                             <p class="testimonial-text">Nam sit amet eleifend justo. Aliquam sit amet lacinia enim, eget facilisis ex. Ut pretium cursus eleifend. Integer feugiat malesuada quam vel basil venis proca jilo</p>
                                             <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-3.jpg" alt="alternative">
+                                                <img class="testimonial-image" src="images/Rachmat.jpg" alt="alternative">
                                                 <div class="text">
-                                                    <div class="testimonial-author">Mary Longhorn</div>
-                                                    <div class="occupation">Manager - Firstdev</div>
+                                                    <div class="testimonial-author">Rachmat, S.Kom., M.T., M.Kom</div>
+                                                    <div class="occupation">Direktur Perusahaan</div>
                                                 </div> <!-- end of text -->
                                             </div> <!-- end of testimonial-details -->
                                         </div>
@@ -151,10 +158,10 @@
                                         <div class="card-body">
                                             <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur ing elit. Nulla id nisl tempus risus facilisis efficr ut tincidunt vitae enim non vehicula. Phases vitae metus in felis gravida ultrices zimbo</p>
                                             <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-4.jpg" alt="alternative">
+                                                <img class="testimonial-image" src="images/abdurahman.jpg" alt="alternative">
                                                 <div class="text">
-                                                    <div class="testimonial-author">Ronny Drummer</div>
-                                                    <div class="occupation">Designer - Sawdust</div>
+                                                    <div class="testimonial-author">Abdurahman Patta, S.Kom., M.T</div>
+                                                    <div class="occupation">Dosen JTIK</div>
                                                 </div> <!-- end of text -->
                                             </div> <!-- end of testimonial-details -->
                                         </div>
