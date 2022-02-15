@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "cv_stowr");
+$conn = mysqli_connect("localhost", "root", "", "crud_gc");
 
 
 function query($query) {
