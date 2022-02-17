@@ -1,3 +1,8 @@
+<?php
+require 'koneksi.php';
+$proyek = query("SELECT * FROM tbl_proyek");
+?> 
+
 <div id="projects" class="filter bg-gray">
 		<div class="container">
             <div class="row">
@@ -18,10 +23,13 @@
                     <div class="grid">
                         <div class="element-item development">
                             <a href="article.html">
-                                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
+                            <?php foreach( $proyek as $row) : ?>
+                                <img src="img/<?= $row["gambar_produk"]; ?>" alt="alternative">
                                 <p><strong>Online banking</strong> - pellentesque tincidunt leo eu laoreedt integer quis vanos compren</p>
                             </a>
                         </div>
+                        
+                        <?php endforeach; ?>
                         <div class="element-item development">
                             <a href="article.html">
                                 <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
@@ -179,3 +187,4 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
+</div>
