@@ -19,7 +19,7 @@ if($gambar_produk != "") {
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {     
                 move_uploaded_file($file_tmp, 'gambar/'.$nama_gambar_baru); //memindah file gambar ke folder gambar
                   // jalankan query INSERT untuk menambah data ke database pastikan sesuai urutan (id tidak perlu karena dibikin otomatis)
-                  $query = "INSERT INTO produk (nama_produk, deskripsi, gambar_produk) VALUES ('$nama_produk', '$deskripsi', '$nama_gambar_baru')";
+                  $query = "INSERT INTO tbl_proyek (nama_produk, deskripsi, gambar_produk) VALUES ('$nama_produk', '$deskripsi', '$nama_gambar_baru')";
                   $result = mysqli_query($koneksi, $query);
                   // periska query apakah ada error
                   if(!$result){

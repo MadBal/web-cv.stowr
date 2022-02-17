@@ -20,20 +20,20 @@ $proyek = query("SELECT * FROM tbl_proyek");
                         <button class="button" data-filter=".development">DEVELOPMENT</button>
                         <button class="button" data-filter=".marketing">MARKETING</button>
                     </div> <!-- end of button group -->
+                    <?php foreach( $proyek as $row) : ?>
                     <div class="grid">
-                        <div class="element-item development">
+                        
+                    <div class="element-item development">
                             <a href="article.html">
-                            <?php foreach( $proyek as $row) : ?>
-                                <img src="img/<?= $row["gambar_produk"]; ?>" alt="alternative">
-                                <p><strong>Online banking</strong> - pellentesque tincidunt leo eu laoreedt integer quis vanos compren</p>
+                                <img class="img-fluid" src="admin/gambar/<?= $row["gambar_produk"]; ?>">
+                                <p><strong><?= $row["nama_produk"]; ?></strong> - <?= $row["deskripsi"]; ?></p>
                             </a>
                         </div>
                         
-                        <?php endforeach; ?>
                         <div class="element-item development">
                             <a href="article.html">
-                                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-                                <p><strong>Loans company</strong> - odio semper, interdum orci molestie, mattis lectus pellentesq aliqu</p>
+                                <img class="img-fluid" src="admin/gambar/<?= $row["gambar_produk"]; ?>">
+                                <p><strong><?= $row["nama_produk"]; ?></strong> - <?= $row["deskripsi"]; ?></p>
                             </a>
                         </div>
                         <div class="element-item development">
@@ -80,7 +80,7 @@ $proyek = query("SELECT * FROM tbl_proyek");
                         </div>
                     </div> <!-- end of grid -->
                     <!-- end of filter -->
-                    
+                    <?php endforeach; ?>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
 		</div> <!-- end of container -->

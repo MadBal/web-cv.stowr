@@ -62,7 +62,7 @@
     <tbody>
       <?php
       // jalankan query untuk menampilkan semua data diurutkan berdasarkan nim
-      $query = "SELECT * FROM produk ORDER BY id ASC";
+      $query = "SELECT * FROM tbl_proyek ORDER BY id ASC";
       $result = mysqli_query($koneksi, $query);
       //mengecek apakah ada error ketika menjalankan query
       if(!$result){

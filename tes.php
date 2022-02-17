@@ -1,6 +1,6 @@
 <?php
 require 'koneksi.php';
-$visimisi = query("SELECT * FROM tbl_visimisi");
+$visimisi = query("SELECT * FROM tbl_proyek");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,8 +27,8 @@ $visimisi = query("SELECT * FROM tbl_visimisi");
         
         <tr>
             <td><?= $i; ?></td>
-            <td><?= $row["visi"]; ?></td>
-            <td><?= $row["misi"]; ?></td>
+            <td><?= $row["nama_produk"]; ?></td>
+            <td><img src="admin/gambar/<?= $row["gambar_produk"]; ?>"></td>
         </tr>
         <?php $i++; ?>
         <?php endforeach; ?>
